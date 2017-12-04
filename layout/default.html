@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.subtitle %} {{ page.subtitle }} -{% endif %}{% if page.title %} {{ page.title }} -{% endif %} Flyway by Boxfuse &bull; Database Migrations Made Easy.</title>
+    <link rel="alternate" type="application/atom+xml" title="Flyway" href="/blog/atom.xml" />
+    <link href="/assets/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/prettify-20110601/prettify.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/flywaydb.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8"/>
+    <meta property="og:title" content="Flyway by Boxfuse &bull; Database Migrations Made Easy."/>
+    <meta property="og:type" content="product"/>
+    <meta property="og:url" content="https://flywaydb.org"/>
+    <meta property="og:site_name" content="Flyway by Boxfuse"/>
+    <meta property="og:image" content="https://flywaydb.org/assets/logo/flyway-logo-tm.png"/>
+    <meta property="fb:admins" content="762307805"/>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-8034033-6']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        if (self !== top) {
+            top.location = self.location;
+        }
+    </script>
+</head>
+<body>
+<div id="top-cta"><a href="https://boxfuse.com">Want to deploy your JVM, Node.js and Go apps effortlessly to AWS? Try our service <img src="/assets/logo/boxfuse-logo-nano.png"> Boxfuse <i class="fa fa-arrow-right" style="color: #EFF7FB"></i></a></div>
+<div class="container">
+    <div id="header" class="row">
+        <div class="col-md-2">
+            {% if page.tab != 'home' %}<a href="/"><img src="/assets/logo/flyway-logo-tm-sm.png" alt="Flyway" usemap="#logosmmap"/>
+            <map name="logosmmap">
+                <area shape="rect" coords="45,90,120,106" href="https://boxfuse.com" alt="Boxfuse">
+            </map></a>{% endif %}
+        </div>
+        <div class="col-md-10">
+            <ul id="tabs" class="nav nav-tabs ">
+                <li
+                {% if layout.tab == 'getStarted' %} class="active" {% endif %}>
+                <a href="/getstarted">GET STARTED</a></li>
+                <li
+                {% if layout.tab == 'documentation' %} class="active" {% endif %}>
+                <a href="/documentation">DOCUMENTATION</a></li>
+                <li
+                {% if layout.tab == 'blog' %} class="active" {% endif %}>
+                <a href="/blog">BLOG</a></li>
+                <li
+                {% if page.tab == 'support' %} class="active" {% endif %}>
+                <a href="/support">SUPPORT</a></li>
+                <li
+                {% if page.tab == 'about' %} class="active" {% endif %}>
+                <a href="/about">ABOUT</a></li>
+                <li><a href="https://twitter.com/flywaydb" style="padding-bottom: 7px"><i class="fa fa-twitter" style="font-size: 150%"></i></a></li>
+                <li><a href="https://github.com/flyway/flyway" style="padding-bottom: 7px"><i class="fa fa-github" style="font-size: 150%"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% if page.tab != 'home' %}
+<div class="container">
+{% endif %}
+
+{{ content }}
+
+{% if page.tab != 'home' %}
+</div>
+{% endif %}
+
+<div class="container">
+    <hr class="soften"/>
+    <div id="footer">
+        <!-- Begin MailChimp Signup Form -->
+        <h3 style="color: #888">Stay updated with our monthly newsletter</h3>
+        <form action="//boxfuse.us9.list-manage.com/subscribe/post?u=0e72f61962b6b47f78568d56c&amp;id=e1046edb96" method="post" id="mc-embedded-subscribe-form-footer" name="mc-embedded-subscribe-form-footer" class="validate form-inline" target="_blank" novalidate>
+            <div>
+                <div class="input-group">
+                    <input type="email" value="" name="EMAIL" required="required" class="form-control" id="mce-EMAIL-footer" placeholder="Your email address">
+                    <span class="input-group-btn">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-footer" class="btn btn-primary">
+                        </span>
+                </div>
+                <div id="mce-responses-footer" class="clear form-control-feedback">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_0e72f61962b6b47f78568d56c_e1046edb96" tabindex="-1" value=""></div>
+            </div>
+        </form>
+        <!--End mc_embed_signup-->
+
+        <!-- Place this tag where you want the button to render. -->
+        <p style="margin-top: 30px">
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/flyway/flyway" data-count-href="/flyway/flyway/stargazers" data-count-api="/repos/flyway/flyway#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star flyway/flyway on GitHub">Star</a>
+        </p>
+
+        <p style="margin-top: 30px">
+            <a href="https://twitter.com/flywaydb" class="twitter-follow-button" data-show-count="false">Follow @flywaydb</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>
+            &copy; 2010-2017 <a href="https://boxfuse.com">Boxfuse GmbH</a>. Made with <i class="fa fa-heart"></i> in M&uuml;nchen.
+        </p>
+        <p>
+            Maintained with help of the <a href="/documentation/contribute/hallOfFame">many contributors</a><br/>
+        </p>
+        <p>
+            Code licensed under <a href="https://raw.githubusercontent.com/flyway/flyway/master/LICENSE.txt">Apache License, Version 2</a><br/>
+            Website content licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY SA 4.0</a>
+        <br/>
+            Icons from <a href="http://fontawesome.io/">Font Awesome</a>,
+            licensed under <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>
+        </p>
+
+        <p>
+            Flyway is a registered trademark of <a href="http://boxfuse.com">Boxfuse GmbH</a><br/>
+            All other trademarks, trade names, logos or service marks mentioned on this site belong to their respective owners.</p>
+            <p>This site collects anonymous usage information through Google Analytics.</p>
+    </div>
+</div>
+<script src="/assets/jquery-1.12.1/jquery-1.12.1.min.js" type="text/javascript"></script>
+<script src="/assets/bootstrap-3.3.6-dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/prettify-20110601/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        prettyPrint();
+
+        $("a[href^=http]").each(function () {
+            if (this.href.indexOf(location.hostname) == -1) {
+                $(this).attr({
+                    target: "_blank",
+                    title: "Opens in a new window"
+                });
+            }
+        });
+    });
+
+    if (navigator.platform.indexOf('Win') == -1) {
+        // Not windows
+        // Fix line continuation marks
+        $("pre.console").html(function () {
+            return $(this).html().replace(/\^\n/g, "\\\n");
+        });
+        // And prompt char
+        $("pre.console span").html(function () {
+            return $(this).html().replace("&gt;", "$");
+        });
+    }
+</script>
+<!-- Place this tag right after the last button or just before your close body tag. -->
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
