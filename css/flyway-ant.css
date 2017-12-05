@@ -5,6 +5,11 @@ body {
 .prettyprint {
   background-color: #f8f8f8;
 }
+
 pre.prettyprint {
   padding: 1em 1em 1em 1em; 
+}
+
+.h3, h3 {
+    font-size: 1.5rem;
 }
