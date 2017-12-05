@@ -39,8 +39,12 @@
         </tr>
     </table>
 
-    <h3>Ivy</h3>
-    <pre class="prettyprint">&lt;dependency org="org.flywaydb.ant" name="flyway-ant" rev="{{flywayVersion}}"/&gt;</pre>
+    <h3>Maven</h3>
+    <pre class="prettyprint">&lt;dependency&gt;
+    &lt;groupId&gt;org.flywaydb.ant&lt;/groupId&gt;
+    &lt;artifactId&gt;flyway-ant&lt;/artifactId&gt;
+    &lt;version&gt;0-SNAPSHOT&lt;/version&gt;
+&lt;/dependency&gt;</pre>
 
     <h2>Usage</h2><pre class="prettyprint">&lt;project ... xmlns:flyway=&quot;antlib:org.flywaydb.ant&quot;&gt;
    &lt;path id=&quot;flyway.lib.path&quot;&gt;
