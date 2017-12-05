@@ -1,10 +1,19 @@
----
-layout: ant
-pill: validate
-subtitle: 'Ant Task: Validate'
----
-<div id="antTaskValidate">
-    <h1>Ant Task: Validate</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flyway Ant Task: Validate</title>
+    
+    <link href="/bootstrap-4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/flyway-ant.css" rel="stylesheet" type="text/css"/>    
+</head>
+<body>
+
+<div>
+    <h1>Flyway Ant Task: Validate</h1>
 
     <p>Validate applied migrations against resolved ones (on the filesystem or classpath)
         to detect accidental changes that may prevent the schema(s) from being recreated exactly.</p>
@@ -15,7 +24,7 @@ subtitle: 'Ant Task: Validate'
         <li>versions have been resolved that haven't been applied yet</li>
     </ul>
 
-    <a href="/documentation/command/validate"><img src="/img/command-validate.png" alt="validate"></a>
+    <a href="https://flywaydb.org/documentation/command/validate"><img src="/img/command-validate.png" alt="validate"></a>
 
     <h2>Usage</h2><pre class="prettyprint">&lt;flyway:validate&gt;
    &lt;locations&gt;
@@ -150,7 +159,7 @@ subtitle: 'Ant Task: Validate'
             <td>NO</td>
             <td></td>
             <td>Fully qualified class names of custom
-                <a href="/documentation/api/javadoc/org/flywaydb/core/api/resolver/MigrationResolver">MigrationResolver</a>
+                <a href="https://flywaydb.org/documentation/api/javadoc/org/flywaydb/core/api/resolver/MigrationResolver">MigrationResolver</a>
                 implementations to be used in addition to the built-in ones for resolving Migrations to apply.</td>
         </tr>
         <tr>
@@ -164,7 +173,7 @@ subtitle: 'Ant Task: Validate'
             <td>NO</td>
             <td></td>
             <td>Fully qualified class names of
-                <a href="/documentation/api/javadoc/org/flywaydb/core/api/callback/FlywayCallback">FlywayCallback</a>
+                <a href="https://flywaydb.org/documentation/api/javadoc/org/flywaydb/core/api/callback/FlywayCallback">FlywayCallback</a>
                 implementations to use to hook into the Flyway lifecycle.</td>
         </tr>
         <tr>
@@ -274,7 +283,18 @@ subtitle: 'Ant Task: Validate'
     <h2>Sample output</h2>
     <pre class="console">[flyway:validate] Validated 4 migrations (execution time 00:00.038s)</pre>
 
-    <p class="next-steps">
-        <a class="btn btn-primary" href="/documentation/ant/baseline">Ant: baseline <i class="fa fa-arrow-right"></i></a>
-    </p>
 </div>
+
+<p style="margin-top: 30px">
+    <a href="https://twitter.com/flywaydb" class="twitter-follow-button" data-show-count="false">Follow @flywaydb</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</p>
+
+<p>
+    Code licensed under <a href="https://raw.githubusercontent.com/flyway/flyway/master/LICENSE.txt">Apache License, Version 2</a>
+</p>
+
+<a href="https://github.com/flyway/flyway-ant"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+</body>
+</html>

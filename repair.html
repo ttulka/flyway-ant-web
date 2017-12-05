@@ -1,10 +1,19 @@
----
-layout: ant
-pill: repair
-subtitle: 'Ant Task: Repair'
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flyway Ant Task: Repair</title>
+    
+    <link href="/bootstrap-4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/flyway-ant.css" rel="stylesheet" type="text/css"/>    
+</head>
+<body>
+
 <div id="antTaskRepair">
-    <h1>Ant Task: Repair</h1>
+    <h1>Flyway Ant Task: Repair</h1>
 
     <p>Repairs the Flyway metadata table. This will perform the following actions:</p>
     <ul>
@@ -14,7 +23,7 @@ subtitle: 'Ant Task: Repair'
         <li>Correct wrong checksums</li>
     </ul>
 
-    <a href="/documentation/command/repair"><img src="/img/command-repair.png" alt="repair"></a>
+    <a href="https://flywaydb.org/documentation/command/repair"><img src="/img/command-repair.png" alt="repair"></a>
 
     <h2>Usage</h2>
     <pre class="prettyprint">&lt;flyway:repair /&gt;</pre>
@@ -144,7 +153,7 @@ subtitle: 'Ant Task: Repair'
             <td>NO</td>
             <td></td>
             <td>Fully qualified class names of custom
-                <a href="/documentation/api/javadoc/org/flywaydb/core/api/resolver/MigrationResolver">MigrationResolver</a>
+                <a href="https://flywaydb.org/documentation/api/javadoc/org/flywaydb/core/api/resolver/MigrationResolver">MigrationResolver</a>
                 implementations to be used in addition to the built-in ones for resolving Migrations to apply.</td>
         </tr>
         <tr>
@@ -158,7 +167,7 @@ subtitle: 'Ant Task: Repair'
             <td>NO</td>
             <td></td>
             <td>Fully qualified class names of
-                <a href="/documentation/api/javadoc/org/flywaydb/core/api/callback/FlywayCallback">FlywayCallback</a>
+                <a href="https://flywaydb.org/documentation/api/javadoc/org/flywaydb/core/api/callback/FlywayCallback">FlywayCallback</a>
                 implementations to use to hook into the Flyway lifecycle.</td>
         </tr>
         <tr>
@@ -212,7 +221,18 @@ subtitle: 'Ant Task: Repair'
     <h2>Sample output</h2>
     <pre class="console">[flyway:repair] Repair not necessary. No failed migration detected.</pre>
 
-    <p class="next-steps">
-        <a class="btn btn-primary" href="/documentation/sbt">SBT <i class="fa fa-arrow-right"></i></a>
-    </p>
 </div>
+
+<p style="margin-top: 30px">
+    <a href="https://twitter.com/flywaydb" class="twitter-follow-button" data-show-count="false">Follow @flywaydb</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</p>
+
+<p>
+    Code licensed under <a href="https://raw.githubusercontent.com/flyway/flyway/master/LICENSE.txt">Apache License, Version 2</a>
+</p>
+
+<a href="https://github.com/flyway/flyway-ant"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+</body>
+</html>

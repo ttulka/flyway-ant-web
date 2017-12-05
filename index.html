@@ -1,10 +1,19 @@
----
-layout: ant
-pill: overview
-subtitle: Ant Tasks
----
-<div id="antTasks">
-    <h1>Ant Tasks</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flyway Ant Tasks Plugin</title>
+    
+    <link href="/bootstrap-4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/flyway-ant.css" rel="stylesheet" type="text/css"/>    
+</head>
+<body>
+
+<div>
+    <h1>Flyway Ant Tasks Plugin</h1>
 
     <p>The Flyway Ant Tasks are provided as an AntLib.</p>
 
@@ -21,17 +30,17 @@ subtitle: Ant Tasks
         <tbody>
         <tr>
             <td>
-                <a href="https://repo1.maven.org/maven2/org/flywaydb/flyway-ant/{{site.flywayVersion}}/flyway-ant-{{site.flywayVersion}}.zip">flyway-ant-{{site.flywayVersion}}.zip</a><br/>
-                <a href="https://repo1.maven.org/maven2/org/flywaydb/flyway-ant/{{site.flywayVersion}}/flyway-ant-{{site.flywayVersion}}.tar.gz">flyway-ant-{{site.flywayVersion}}.tar.gz</a>
+                <a href="https://repo1.maven.org/maven2/org/flywaydb/ant/flyway-ant/{{flywayVersion}}/flyway-ant-{{flywayVersion}}.zip">flyway-ant-{{flywayVersion}}.zip</a><br/>
+                <a href="https://repo1.maven.org/maven2/org/flywaydb/ant/flyway-ant/{{flywayVersion}}/flyway-ant-{{flywayVersion}}.tar.gz">flyway-ant-{{flywayVersion}}.tar.gz</a>
             </td>
             <td>
-                <a href="https://repo1.maven.org/maven2/org/flywaydb/flyway-ant/{{site.flywayVersion}}/flyway-ant-{{site.flywayVersion}}-sources.jar">flyway-ant-{{site.flywayVersion}}-sources.jar</a>
+                <a href="https://repo1.maven.org/maven2/org/flywaydb/ant/flyway-ant/{{flywayVersion}}/flyway-ant-{{flywayVersion}}-sources.jar">flyway-ant-{{flywayVersion}}-sources.jar</a>
             </td>
         </tr>
     </table>
 
     <h3>Ivy</h3>
-    <pre class="prettyprint">&lt;dependency org="org.flywaydb" name="flyway-ant" rev="{{ site.flywayVersion }}"/&gt;</pre>
+    <pre class="prettyprint">&lt;dependency org="org.flywaydb.ant" name="flyway-ant" rev="{{flywayVersion}}"/&gt;</pre>
 
     <h2>Usage</h2><pre class="prettyprint">&lt;project ... xmlns:flyway=&quot;antlib:org.flywaydb.ant&quot;&gt;
    &lt;path id=&quot;flyway.lib.path&quot;&gt;
@@ -60,27 +69,27 @@ subtitle: Ant Tasks
         </thead>
         <tbody>
         <tr>
-            <td><a href="/documentation/ant/migrate">migrate</a></td>
+            <td><a href="/migrate.html">migrate</a></td>
             <td>Migrates the database</td>
         </tr>
         <tr>
-            <td><a href="/documentation/ant/clean">clean</a></td>
+            <td><a href="/clean.html">clean</a></td>
             <td>Drops all objects in the configured schemas</td>
         </tr>
         <tr>
-            <td><a href="/documentation/ant/info">info</a></td>
+            <td><a href="/info.html">info</a></td>
             <td>Prints the details and status information about all the migrations</td>
         </tr>
         <tr>
-            <td><a href="/documentation/ant/validate">validate</a></td>
+            <td><a href="/validate.html">validate</a></td>
             <td>Validates the applied migrations against the ones available on the classpath</td>
         </tr>
         <tr>
-            <td><a href="/documentation/ant/baseline">baseline</a></td>
+            <td><a href="/baseline.html">baseline</a></td>
             <td>Baselines an existing database, excluding all migrations up to and including baselineVersion</td>
         </tr>
         <tr>
-            <td><a href="/documentation/ant/repair">repair</a></td>
+            <td><a href="/repair.html">repair</a></td>
             <td>Repairs the metadata table</td>
         </tr>
         </tbody>
@@ -127,8 +136,18 @@ subtitle: Ant Tasks
     <h3>Overriding order</h3>
 
     <p>System properties <i>override</i> Ant properties <i>override</i> Task attributes</p>
-
-    <p class="next-steps">
-        <a class="btn btn-primary" href="/documentation/ant/migrate">Ant: migrate <i class="fa fa-arrow-right"></i></a>
-    </p>
 </div>
+
+<p style="margin-top: 30px">
+    <a href="https://twitter.com/flywaydb" class="twitter-follow-button" data-show-count="false">Follow @flywaydb</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</p>
+
+<p>
+    Code licensed under <a href="https://raw.githubusercontent.com/flyway/flyway/master/LICENSE.txt">Apache License, Version 2</a>
+</p>
+
+<a href="https://github.com/flyway/flyway-ant"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+</body>
+</html>
